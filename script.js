@@ -32,3 +32,40 @@ function display(){
 function xd(e){
     alert(e.target.nodeValue);
 }
+
+function postFix(equation){
+    let operators = new Array(1000);
+    let numbers = arrayOfNums(equation);
+    operators.push("$");
+    let output = "";
+    for(let i = 0; i < numbers.length; i++)
+    {
+        let curr = numbers[i];
+        if(isNaN(curr)){
+            let top = operators.peek();
+            while(precedence(top) >= precedence(curr)){
+                output += operators.pop();
+            }
+        }
+    }
+}
+
+function precedence(operator){
+    if(operator.equals("*") || operator.equals("/"))
+        return 2;
+    else if(operator.equals("+") || operator.equals("-"))
+        return 1;
+    return 0;
+}
+
+function arrayOfNums(equation){
+    equation.replace("x", " x ");
+    equation.replace("/", " / ");
+    equation.replace("+", " / ");
+    equation.replace("-", " - ");
+    equation.replace("(", " ( ");
+    equation.replace(")", " ) ");
+    return equation.split(" ");
+}
+
+
