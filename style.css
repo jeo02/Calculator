@@ -46,7 +46,17 @@ body{
 }
 .font{
     font-size: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
+
+.button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 
 @media (max-width: 600px){
     #grid{
@@ -58,8 +68,14 @@ body{
     }
     #clear{
         font-size: 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
     #delete{
         font-size: 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
 }
