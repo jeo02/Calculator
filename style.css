@@ -43,3 +43,20 @@ body{
     font-size: 20px;
     margin:5px;
 }
+
+.button{
+    font-size: 25px;
+}
+
+.operator{
+    font-size: 25px;
+}
+#open{
+    font-size: 25px;
+}
+#close{
+    font-size: 25px;
+}
+#equals{
+    font-size: 25px;
+}

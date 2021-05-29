@@ -154,8 +154,13 @@ function calculator(){
             operands.push(solve(operand1, operand2, curr));
         }
     }
+    let output = operands.pop();
     
-    return operands.pop();
+    //most likely error is misplaced operator ex. x9 or 9x
+    if(output === "NaN")
+        return "ERROR";
+    
+    return output;
 }
 
 function precedence(operator){
