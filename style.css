@@ -61,6 +61,7 @@ body{
         height:50px;
         border-radius: 0px;
         border: 1px solid black;
+        background-color: lightgrey;
     }
     #clear{
         font-size: 10px;
@@ -68,6 +69,7 @@ body{
         height:50px;
         border-radius: 0;
         border: 1px solid black;
+        background-color: lightgrey;
     }
     #delete{
         font-size: 10px;
@@ -75,11 +77,13 @@ body{
         height:50px;
         border-radius: 0;
         border: 1px solid black;
+        background-color: lightgrey;
     }
     .button{
         width: 50px;
         height:50px;
         border-radius: 0;
         border: 1px solid black;
+        background-color: lightgrey;
     }
 }
