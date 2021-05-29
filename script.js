@@ -155,7 +155,7 @@ function calculator(){
         }
     }
     let output = operands.pop();
-    
+    console.log(output);
     //most likely error is misplaced operator ex. x9 or 9x
     if(output === "NaN")
         return "ERROR";
@@ -178,7 +178,7 @@ function isOperator(operator){
 function solve(a, b, operator){
     switch(operator){
         case "+":
-            return a+b;
+            return +a + +b;
         case "-":
             return a-b;
         case "x":
