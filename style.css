@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 #container{
@@ -43,20 +44,22 @@ body{
     font-size: 20px;
     margin:5px;
 }
-
-.button{
+.font{
     font-size: 25px;
 }
 
-.operator{
-    font-size: 25px;
-}
-#open{
-    font-size: 25px;
-}
-#close{
-    font-size: 25px;
-}
-#equals{
-    font-size: 25px;
+@media (max-width: 600px){
+    #grid{
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+    }
+    .font{
+        font-size: 20px;
+    }
+    #clear{
+        font-size: 10px;
+    }
+    #delete{
+        font-size: 10px;
+    }
 }
